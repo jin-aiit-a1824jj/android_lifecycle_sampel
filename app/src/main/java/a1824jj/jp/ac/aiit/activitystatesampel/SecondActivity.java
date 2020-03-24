@@ -14,6 +14,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        getLifecycle().addObserver(new DemoAppComponent("SecondActivity"));
 
         Log.e("TAG", "**************** SecondActivity onCreate()");
     }

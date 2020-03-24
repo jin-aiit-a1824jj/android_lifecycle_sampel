@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getLifecycle().addObserver(new DemoAppComponent("MainActivity"));
+
         Log.e("TAG", "**************** MainActivity onCreate()");
 
         FloatingActionButton fab = findViewById(R.id.fab);
